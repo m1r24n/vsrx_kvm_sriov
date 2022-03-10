@@ -40,3 +40,13 @@ vsrx | host
 ge-0/0/0 | enp130s0f0
 ge-0/0/1 | enp130s0f1
 
+the do the following to enable VF (virtual function) on interface enp130s0f0 and enp130s0f1
+1. Verify that VF is not enabled on interface enp130s0f0 and enp130s0f1. numvfs value must be 0
+
+        sudo cat /sys/class/net/enp130s0f0/device/sriov_numvfs
+        sudo cat /sys/class/net/enp130s0f1/device/sriov_numvfs
+
+![numvfs0](numvfs0.png)
+
+
+
