@@ -24,7 +24,7 @@ Official documentation can be found [here](https://www.juniper.net/documentation
 
 ### setting virtual function on the network interface
 1. verify that NIC that support SRIOV is installed on the server
-2. do the following command to verify that i40e module has been load
+2. do the following command to verify that i40e module has been loaded
 
         lsmod | grep i40e
 
@@ -33,7 +33,7 @@ Official documentation can be found [here](https://www.juniper.net/documentation
 
         sudo modprobe i40e
 
-4. to verify that network interface card is properly load, do the following command
+4. to verify that network interface card is properly loaded, do the following command
 
         lspci | grep Ether
 ![sriov_nic](sriov_nic.png)
