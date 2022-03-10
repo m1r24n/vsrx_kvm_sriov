@@ -48,5 +48,13 @@ the do the following to enable VF (virtual function) on interface enp130s0f0 and
 
 ![numvfs0](numvfs0.png)
 
+2. enable VF on on interface enp130s0f0 and enp130s0f1. to add  1x VF on these interfaces, do the following
 
+        echo 1 | sudo tee  /sys/class/net/enp130s0f0/device/sriov_numvfs
+        echo 1 | sudo tee  /sys/class/net/enp130s0f1/device/sriov_numvfs
 
+3. To verify that VF has been add, do the following
+        
+        lspci | grep Ether
+
+![numvfs1](numvfs1.png)
