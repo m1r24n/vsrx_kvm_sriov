@@ -109,7 +109,7 @@ the do the following to enable VF (virtual function) on interface enp130s0f0 and
 
         virsh list
 
-8. edit configuration of vsrx vm, and look for entry <interface>. There will be three entries, the first one is for interface fxp0 (just leave it as it is). We are going to change the 2nd (for interface ge-0/0/0) and 3rd (for interface (ge-0/0/1)
+8. edit configuration of vsrx vm, and look for entry `<interface>`. There will be three entries, the first one is for interface fxp0 (just leave it as it is). We are going to change the 2nd (for interface ge-0/0/0) and 3rd (for interface (ge-0/0/1)
 
         virsh edit vsrx1
 
@@ -138,7 +138,7 @@ the do the following to enable VF (virtual function) on interface enp130s0f0 and
         </interface>
 
 
-  remember for entry <address type="pci" domain="0x0000" bus="0x82" slot="0x02" function="0x0"/>, the bus, slot and function must match the output of lspci
+  remember for entry `<address type="pci" domain="0x0000" bus="0x82" slot="0x02" function="0x0"/>`, the bus, slot and function must match the output of lspci
 
 10. for interface ge-0/0/1, change the following entries
 
